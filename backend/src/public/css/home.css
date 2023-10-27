@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box; 
+}
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;    
+    text-align: center;
+}
+
+.container-products > .product {
+    display: column;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: aquamarine;
+    border: 1px solid black;
+}   
+

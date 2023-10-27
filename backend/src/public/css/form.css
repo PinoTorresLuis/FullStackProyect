@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #ffff;
+}
+h1{ 
+    text-align: center;
+    font-size: 2rem;
+    margin: 1em;
+}
+
+.form-container { 
+    width: 100%;
+    height: auto;
+    background-color: #78ab96;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.form-container > .form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 1rem;
+    padding: 10px;
+}
+  
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    margin: 1em;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-products > .product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    margin: 1em;
+    padding: 1em;
+    height: auto;
+    width: auto;
+}
+
+.container-products > .product > .btn-delete {
+    margin-top: 5px;
+    background-color: #ffff;
+    color: red;
+    border: #0000;
+    width: 100%;
+}

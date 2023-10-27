@@ -1,0 +1,28 @@
+<h1>bienvenido al panel de Admin</h1>
+
+ {{#if users }} 
+<h4>Te mostramos todos los usuarios logueados hasta el momento en tú App</h4>
+    <div class="container-users">
+  {{#each users}}
+    <div class="users">         
+          <p>Name: {{this.first_name}}</p>
+          <p>Last Name: {{this.lastname}}</p>
+          <p>Age: {{this.age}}</p>
+          <p>Email: {{this.email}}</p>
+          </div>
+        {{/each}} 
+        </div>
+        {{else}}
+     <h2>No hay usuarios registrados en tu App :/</h2>
+     {{/if}}
+
+<div class="container-form">
+    <h3 class="title-form">Acá también te dejamos el link del formulario para crear más productos</h3>
+    <div>
+     <a href="./realtimeproducts"><button type="button" class="btn btn-primary">Formulario</button></a>
+     </div>
+     <h5>Y también te dejamos la ruta para ver los productos existentes</h5>
+     <div>
+      <a href="./products"><button type="button" class="btn btn-primary">Productos</button></a>
+      </div>
+</div>

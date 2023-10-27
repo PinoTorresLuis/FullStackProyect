@@ -1,0 +1,19 @@
+<h1>Bienvenidos a nuestro local {{info}}</h1>
+
+<button type="button" class="btn btn-danger" id="btn-logout">Log Out</button>
+
+      {{#if products}} 
+       <h2>Nuestros productos</h2>   
+        <div class="container-products">
+      {{#each products}}
+          <div class="product">         
+          <p>Title: {{this.title}}</p>
+          <p>Description: {{this.description}}</p>
+          <p>Price: {{this.price}}</p>
+          <p>thumbnail: {{this.thumbnail}}</p>
+          <p>Code: {{this.code}}</p>
+          <p>Stock: {{this.stock}}</p>
+          </div>
+        {{/each}} 
+        </div>
+        {{/if}}
